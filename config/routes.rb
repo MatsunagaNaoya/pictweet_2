@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+
+  resources :tweets
+  #resources で７つのアクションルートを自動作成
+  #resources :tweets, only: [:index, :new]と書くと二つのみルーティング設定できる
 end
