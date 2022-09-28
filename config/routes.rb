@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   root to: 'tweets#index'
   #root to:パス名で標準URLに設定
   resources :tweets
